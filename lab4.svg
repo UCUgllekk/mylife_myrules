@@ -1,0 +1,287 @@
+<svg width="930" height="824" viewBox="0 0 697.5 618" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="translate(186.0737077531733,616.4509337483632) scale(0.3872665629091991)">
+<polygon fill="white" stroke="none" points="-4,4 -4,-1591.8 844.31,-1591.8 844.31,4 -4,4"/>
+<!-- start -->
+<g id="node1" class="node">
+<title>start</title>
+<polygon fill="none" stroke="black" points="570.52,-1587.8 462.75,-1587.8 462.75,-1447 570.52,-1447 570.52,-1587.8"/>
+<text text-anchor="middle" x="516.63" y="-1571.2" font-family="Times,serif" font-size="14.00">START</text>
+<text text-anchor="middle" x="516.63" y="-1538.4" font-family="Times,serif" font-size="14.00">Time in minutes</text>
+<text text-anchor="middle" x="516.63" y="-1505.6" font-family="Times,serif" font-size="14.00">Colors:</text>
+<text text-anchor="middle" x="516.63" y="-1488.8" font-family="Times,serif" font-size="14.00">Lime - out</text>
+<text text-anchor="middle" x="516.63" y="-1472" font-family="Times,serif" font-size="14.00">Blue - in</text>
+<text text-anchor="middle" x="516.63" y="-1455.2" font-family="Times,serif" font-size="14.00">Red - loop</text>
+</g>
+<!-- sleep -->
+<g id="node2" class="node">
+<title>sleep</title>
+<ellipse fill="#e6a02b" stroke="black" cx="516.63" cy="-1366.8" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="516.63" y="-1362.6" font-family="Times,serif" font-size="14.00">Sleep</text>
+</g>
+<!-- start&#45;&gt;sleep -->
+<g id="edge1" class="edge">
+<title>start-&gt;sleep</title>
+<path fill="none" stroke="black" d="M516.63,-1446.89C516.63,-1438.36 516.63,-1429.76 516.63,-1421.52"/>
+<polygon fill="black" stroke="black" points="520.13,-1421.67 516.63,-1411.67 513.13,-1421.67 520.13,-1421.67"/>
+</g>
+<!-- sleep&#45;&gt;sleep -->
+<g id="edge2" class="edge">
+<title>sleep-&gt;sleep</title>
+<path fill="none" stroke="red" d="M558.68,-1378.25C569.6,-1377.55 577.83,-1373.73 577.83,-1366.8 577.83,-1362.58 574.78,-1359.51 569.92,-1357.6"/>
+<polygon fill="red" stroke="red" points="570.66,-1354.18 560.16,-1355.65 569.28,-1361.04 570.66,-1354.18"/>
+<text text-anchor="middle" x="596.07" y="-1399.25" font-family="Times,serif" font-size="14.00">  time != 420</text>
+<text text-anchor="middle" x="596.07" y="-1382.45" font-family="Times,serif" font-size="14.00">  time &lt; 1320</text>
+</g>
+<!-- dream -->
+<g id="node3" class="node">
+<title>dream</title>
+<ellipse fill="#e6a02b" stroke="black" cx="479.63" cy="-1227.6" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="479.63" y="-1223.4" font-family="Times,serif" font-size="14.00">Dream</text>
+</g>
+<!-- sleep&#45;&gt;dream -->
+<g id="edge3" class="edge">
+<title>sleep-&gt;dream</title>
+<path fill="none" stroke="lime" d="M499.86,-1326.48C495.53,-1312.6 491.11,-1296.75 487.41,-1281.91"/>
+<polygon fill="lime" stroke="lime" points="490.83,-1281.17 485.08,-1272.27 484.03,-1282.81 490.83,-1281.17"/>
+<text text-anchor="middle" x="446.47" y="-1297.88" font-family="Times,serif" font-size="14.00">randint(1,6) == 4   </text>
+</g>
+<!-- washing -->
+<g id="node4" class="node">
+<title>washing</title>
+<ellipse fill="#e6a02b" stroke="black" cx="583.63" cy="-1227.6" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="583.63" y="-1223.4" font-family="Times,serif" font-size="14.00">Washing</text>
+</g>
+<!-- sleep&#45;&gt;washing -->
+<g id="edge5" class="edge">
+<title>sleep-&gt;washing</title>
+<path fill="none" stroke="lime" d="M535.3,-1327.58C542.99,-1311.82 552,-1293.38 560.13,-1276.72"/>
+<polygon fill="lime" stroke="lime" points="563.16,-1278.49 564.41,-1267.97 556.87,-1275.42 563.16,-1278.49"/>
+<text text-anchor="middle" x="587.97" y="-1293" font-family="Times,serif" font-size="14.00">time == 420</text>
+</g>
+<!-- dream&#45;&gt;sleep -->
+<g id="edge4" class="edge">
+<title>dream-&gt;sleep</title>
+<path fill="none" stroke="blue" d="M496.34,-1267.71C500.68,-1281.6 505.11,-1297.49 508.83,-1312.38"/>
+<polygon fill="blue" stroke="blue" points="505.41,-1313.15 511.16,-1322.04 512.22,-1311.5 505.41,-1313.15"/>
+</g>
+<!-- get_dressed -->
+<g id="node5" class="node">
+<title>get_dressed</title>
+<ellipse fill="#e6a02b" stroke="black" cx="475.63" cy="-1088.4" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="475.63" y="-1084.2" font-family="Times,serif" font-size="14.00">Get Dressed</text>
+</g>
+<!-- washing&#45;&gt;get_dressed -->
+<g id="edge6" class="edge">
+<title>washing-&gt;get_dressed</title>
+<path fill="none" stroke="lime" d="M551.74,-1198.2C545.33,-1193.23 538.46,-1188.38 531.63,-1184.4 512.74,-1173.38 499.31,-1183.62 485.84,-1166.4 480.52,-1159.61 477.22,-1151.4 475.27,-1142.91"/>
+<polygon fill="lime" stroke="lime" points="478.74,-1142.48 473.66,-1133.18 471.84,-1143.61 478.74,-1142.48"/>
+<text text-anchor="middle" x="614.53" y="-1153.8" font-family="Times,serif" font-size="14.00">  weather = choice(['warm', 'rainy', 'overcast'])</text>
+</g>
+<!-- eat -->
+<g id="node6" class="node">
+<title>eat</title>
+<ellipse fill="#e6a02b" stroke="black" cx="459.63" cy="-965" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="459.63" y="-960.8" font-family="Times,serif" font-size="14.00">Eat</text>
+</g>
+<!-- get_dressed&#45;&gt;eat -->
+<g id="edge7" class="edge">
+<title>get_dressed-&gt;eat</title>
+<path fill="none" stroke="lime" d="M470.08,-1045.28C468.98,-1036.9 467.8,-1028 466.66,-1019.3"/>
+<polygon fill="lime" stroke="lime" points="470.15,-1019 465.37,-1009.55 463.21,-1019.92 470.15,-1019"/>
+</g>
+<!-- eat&#45;&gt;eat -->
+<g id="edge8" class="edge">
+<title>eat-&gt;eat</title>
+<path fill="none" stroke="red" d="M502.81,-970.68C513.16,-970.24 520.83,-968.34 520.83,-965 520.83,-963.07 518.27,-961.62 514.11,-960.65"/>
+<polygon fill="red" stroke="red" points="514.66,-957.19 504.31,-959.5 513.83,-964.15 514.66,-957.19"/>
+<text text-anchor="middle" x="583.02" y="-974.88" font-family="Times,serif" font-size="14.00">  energy &lt; 40 or hunger &gt; 70</text>
+</g>
+<!-- study -->
+<g id="node7" class="node">
+<title>study</title>
+<ellipse fill="#e6a02b" stroke="black" cx="237.63" cy="-809.8" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="237.63" y="-805.6" font-family="Times,serif" font-size="14.00">Study</text>
+</g><g id="edge28" class="edge" style="display: none;">
+<title>eat-&gt;eat</title>
+<path fill="none" stroke="black" d="M501.6,-976.31C521.42,-977.63 538.83,-973.86 538.83,-965 538.83,-957.87 527.56,-954.04 512.83,-953.5"/>
+<polygon fill="black" stroke="black" points="513.05,-949.99 503.11,-953.66 513.17,-956.99 513.05,-949.99"/>
+</g>
+<!-- eat&#45;&gt;study -->
+<g id="edge10" class="edge">
+<title>eat-&gt;study</title>
+<path fill="none" stroke="lime" d="M416.21,-961.35C343.93,-955.93 203.88,-940.81 173.85,-903.8 158.1,-884.38 173.95,-861.18 193.79,-842.81"/>
+<polygon fill="lime" stroke="lime" points="196.07,-845.46 201.31,-836.26 191.47,-840.19 196.07,-845.46"/>
+<text text-anchor="middle" x="212.02" y="-875.2" font-family="Times,serif" font-size="14.00">time &lt; 760    </text>
+</g>
+<!-- at_home -->
+<g id="node11" class="node">
+<title>at_home</title>
+<ellipse fill="#e6a02b" stroke="black" cx="383.63" cy="-182.4" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="383.63" y="-178.2" font-family="Times,serif" font-size="14.00">At home</text>
+</g>
+<!-- eat&#45;&gt;at_home -->
+<g id="edge9" class="edge">
+<title>eat-&gt;at_home</title>
+<path fill="none" stroke="lime" d="M459.63,-921.41C459.63,-890.67 459.63,-848.17 459.63,-810.8 459.63,-810.8 459.63,-810.8 459.63,-304.8 459.63,-273.41 441.15,-243.46 422.42,-221.16"/>
+<polygon fill="lime" stroke="lime" points="425.21,-219.04 415.98,-213.83 419.95,-223.65 425.21,-219.04"/>
+<text text-anchor="middle" x="497.47" y="-580" font-family="Times,serif" font-size="14.00">  time &gt;= 760</text>
+</g>
+<!-- study&#45;&gt;eat -->
+<g id="edge15" class="edge">
+<title>study-&gt;eat</title>
+<path fill="none" stroke="blue" d="M244.28,-852.84C249.06,-870.64 257.24,-890.34 271.21,-903.8 307.27,-938.54 363.37,-953.23 404.99,-959.45"/>
+<polygon fill="blue" stroke="blue" points="404.43,-962.91 414.81,-960.78 405.37,-955.97 404.43,-962.91"/>
+<text text-anchor="middle" x="358.84" y="-883.2" font-family="Times,serif" font-size="14.00">   energy &lt; 30 or 80 &lt; hunger   </text>
+</g>
+<!-- play -->
+<g id="node13" class="node">
+<title>play</title>
+<ellipse fill="#e6a02b" stroke="black" cx="66.63" cy="-653.8" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="66.63" y="-649.6" font-family="Times,serif" font-size="14.00">Play</text>
+</g>
+<!-- study&#45;&gt;play -->
+<g id="edge16" class="edge">
+<title>study-&gt;play</title>
+<path fill="none" stroke="lime" d="M194.61,-803.27C136.67,-794.83 38.32,-776.7 16.86,-748.6 3.59,-731.23 13.3,-709.82 27.54,-691.84"/>
+<polygon fill="lime" stroke="lime" points="30,-694.36 33.83,-684.48 24.67,-689.81 30,-694.36"/>
+<text text-anchor="middle" x="113.02" y="-736" font-family="Times,serif" font-size="14.00">time &gt; 900               </text>
+<text text-anchor="middle" x="113.02" y="-719.2" font-family="Times,serif" font-size="14.00">    randint(1,3) == 2                       </text>
+</g>
+<!-- if_walk -->
+<g id="node14" class="node">
+<title>if_walk</title>
+<polygon fill="#64b5f6" stroke="#64b5f6" points="337.2,-683 154.07,-683 154.07,-624.6 337.2,-624.6 337.2,-683"/>
+<text text-anchor="middle" x="245.63" y="-666.4" font-family="Times,serif" font-size="14.00">time in range(780, 860)</text>
+<text text-anchor="middle" x="245.63" y="-649.6" font-family="Times,serif" font-size="14.00">weather in ['warm', 'overcast']</text>
+<text text-anchor="middle" x="245.63" y="-632.8" font-family="Times,serif" font-size="14.00">random = randint(1,5)</text>
+</g>
+<!-- study&#45;&gt;if_walk -->
+<g id="edge11" class="edge">
+<title>study-&gt;if_walk</title>
+<path fill="none" stroke="lime" d="M239.84,-766.31C241.01,-743.82 242.43,-716.38 243.58,-694.35"/>
+<polygon fill="lime" stroke="lime" points="247.06,-694.73 244.09,-684.56 240.07,-694.37 247.06,-694.73"/>
+<text text-anchor="middle" x="246.91" y="-727.6" font-family="Times,serif" font-size="14.00">if</text>
+</g>
+<!-- walk_in_park -->
+<g id="node8" class="node">
+<title>walk_in_park</title>
+<ellipse fill="#e6a02b" stroke="black" cx="117.63" cy="-514.6" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="117.63" y="-510.4" font-family="Times,serif" font-size="14.00">Walk in park</text>
+</g>
+<!-- ice_cream -->
+<g id="node10" class="node">
+<title>ice_cream</title>
+<ellipse fill="#e6a02b" stroke="black" cx="89.63" cy="-305.8" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="89.63" y="-301.6" font-family="Times,serif" font-size="14.00">Ice Cream</text>
+</g>
+<!-- walk_in_park&#45;&gt;ice_cream -->
+<g id="edge18" class="edge">
+<title>walk_in_park-&gt;ice_cream</title>
+<path fill="none" stroke="lime" d="M76.16,-501.07C53.37,-491.82 27.06,-476.72 13.62,-453.4 -5.57,-420.13 -3.1,-401.57 13.62,-367 19.98,-353.85 30.77,-342.69 42.24,-333.69"/>
+<polygon fill="lime" stroke="lime" points="44.28,-336.54 50.3,-327.83 40.16,-330.88 44.28,-336.54"/>
+<text text-anchor="middle" x="118.14" y="-414.4" font-family="Times,serif" font-size="14.00">randint(1,4) == 4                         </text>
+<text text-anchor="middle" x="118.14" y="-397.6" font-family="Times,serif" font-size="14.00">     weather == 'warm'                         </text>
+</g>
+<!-- walk_in_park&#45;&gt;at_home -->
+<g id="edge19" class="edge">
+<title>walk_in_park-&gt;at_home</title>
+<path fill="none" stroke="lime" d="M158.2,-498.81C180.05,-488.98 205.88,-474.04 222.63,-453.4 248.07,-422.06 234.81,-404.13 250.63,-367 271.28,-318.56 275.53,-305.09 306.63,-262.6 317.5,-247.75 331.05,-232.9 343.73,-220.14"/>
+<polygon fill="lime" stroke="lime" points="346.16,-222.66 350.83,-213.14 341.25,-217.67 346.16,-222.66"/>
+<text text-anchor="middle" x="183.08" y="-486.21" font-family="Times,serif" font-size="14.00">        else</text>
+</g>
+<!-- walk_with_ps -->
+<g id="node9" class="node">
+<title>walk_with_ps</title>
+<ellipse fill="#e6a02b" stroke="black" cx="294.63" cy="-410.2" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="294.63" y="-406" font-family="Times,serif" font-size="14.00">Walk with pS</text>
+</g>
+<!-- walk_with_ps&#45;&gt;at_home -->
+<g id="edge20" class="edge">
+<title>walk_with_ps-&gt;at_home</title>
+<path fill="none" stroke="lime" d="M304.62,-367.66C313.55,-333.52 328.07,-284.32 346.63,-243.6 348.87,-238.7 351.43,-233.7 354.13,-228.79"/>
+<polygon fill="lime" stroke="lime" points="357.12,-230.62 359.07,-220.2 351.05,-227.12 357.12,-230.62"/>
+</g>
+<!-- ice_cream&#45;&gt;at_home -->
+<g id="edge21" class="edge">
+<title>ice_cream-&gt;at_home</title>
+<path fill="none" stroke="lime" d="M128.29,-286.1C154.66,-273.57 190.49,-256.99 222.63,-243.6 258.86,-228.52 300.35,-213.05 332.14,-201.56"/>
+<polygon fill="lime" stroke="lime" points="333.3,-204.87 341.53,-198.19 330.93,-198.28 333.3,-204.87"/>
+</g>
+<!-- at_home&#45;&gt;sleep -->
+<g id="edge22" class="edge">
+<title>at_home-&gt;sleep</title>
+<path fill="none" stroke="lime" d="M426.9,-188.17C525.35,-200.21 757.63,-235.94 757.63,-304.8 757.63,-1228.6 757.63,-1228.6 757.63,-1228.6 757.63,-1314.06 641.77,-1346.97 570.71,-1359.12"/>
+<polygon fill="lime" stroke="lime" points="570.53,-1355.6 561.21,-1360.65 571.64,-1362.51 570.53,-1355.6"/>
+<text text-anchor="middle" x="798.97" y="-805.6" font-family="Times,serif" font-size="14.00">  time &gt;= 1320</text>
+</g>
+<!-- at_home&#45;&gt;eat -->
+<g id="edge23" class="edge">
+<title>at_home-&gt;eat</title>
+<path fill="none" stroke="blue" d="M426,-192.98C477.79,-207.5 558.63,-240.46 558.63,-304.8 558.63,-810.8 558.63,-810.8 558.63,-810.8 558.63,-856.34 527.39,-899.06 500.01,-927.76"/>
+<polygon fill="blue" stroke="blue" points="497.64,-925.18 493.11,-934.76 502.62,-930.09 497.64,-925.18"/>
+<text text-anchor="middle" x="650.51" y="-580" font-family="Times,serif" font-size="14.00">     energy &lt; 60 &lt; hunger             </text>
+</g>
+<!-- at_home&#45;&gt;study -->
+<g id="edge26" class="edge">
+<title>at_home-&gt;study</title>
+<path fill="none" stroke="blue" d="M395.34,-224.34C401.02,-247.7 406.63,-277.66 406.63,-304.8 406.63,-654.8 406.63,-654.8 406.63,-654.8 406.63,-719.65 337.8,-764.45 287.99,-788.38"/>
+<polygon fill="blue" stroke="blue" points="286.65,-785.14 279.06,-792.53 289.6,-791.49 286.65,-785.14"/>
+<text text-anchor="middle" x="419.27" y="-510.4" font-family="Times,serif" font-size="14.00"> else</text>
+</g>
+<!-- at_home&#45;&gt;at_home -->
+<g id="edge24" class="edge">
+<title>at_home-&gt;at_home</title>
+<path fill="none" stroke="red" d="M425.68,-193.85C436.6,-193.15 444.83,-189.33 444.83,-182.4 444.83,-178.18 441.78,-175.11 436.92,-173.2"/>
+<polygon fill="red" stroke="red" points="437.66,-169.78 427.16,-171.25 436.28,-176.64 437.66,-169.78"/>
+<text text-anchor="middle" x="494.72" y="-162.2" font-family="Times,serif" font-size="14.00"> randint(1,8) == 3</text>
+</g>
+<!-- shower -->
+<g id="node12" class="node">
+<title>shower</title>
+<ellipse fill="#e6a02b" stroke="black" cx="383.63" cy="-43.2" rx="43.2" ry="43.2"/>
+<text text-anchor="middle" x="383.63" y="-39" font-family="Times,serif" font-size="14.00">Shower</text>
+</g>
+<!-- at_home&#45;&gt;shower -->
+<g id="edge25" class="edge">
+<title>at_home-&gt;shower</title>
+<path fill="none" stroke="lime" d="M343.93,-164.85C325.8,-155.03 306.11,-140.65 295.86,-121.2 283.44,-97.61 306.95,-77.93 332.76,-64.38"/>
+<polygon fill="lime" stroke="lime" points="334.28,-67.52 341.72,-59.97 331.2,-61.24 334.28,-67.52"/>
+<text text-anchor="middle" x="378.02" y="-108.6" font-family="Times,serif" font-size="14.00">    randint(1,8) == 5               </text>
+</g>
+<!-- shower&#45;&gt;at_home -->
+<g id="edge27" class="edge">
+<title>shower-&gt;at_home</title>
+<path fill="none" stroke="blue" d="M422.58,-62.64C446.27,-76.67 469.97,-97.56 458.63,-121.2 452.42,-134.15 441.92,-145.19 430.71,-154.15"/>
+<polygon fill="blue" stroke="blue" points="428.8,-151.21 422.85,-159.98 432.97,-156.83 428.8,-151.21"/>
+</g>
+<!-- play&#45;&gt;study -->
+<g id="edge17" class="edge">
+<title>play-&gt;study</title>
+<path fill="none" stroke="blue" d="M103.52,-676.89C116.26,-683.94 130.8,-691.36 144.63,-697 171.6,-707.99 186.72,-694.73 207.63,-715 218.9,-725.92 225.94,-741.05 230.34,-755.98"/>
+<polygon fill="blue" stroke="blue" points="226.85,-756.47 232.72,-765.29 233.63,-754.74 226.85,-756.47"/>
+</g>
+<!-- if_walk&#45;&gt;walk_in_park -->
+<g id="edge13" class="edge">
+<title>if_walk-&gt;walk_in_park</title>
+<path fill="none" stroke="lime" d="M153.61,-624.76C139.74,-616.57 127.21,-606.06 118.58,-592.6 114.06,-585.56 111.7,-577.36 110.7,-568.99"/>
+<polygon fill="lime" stroke="lime" points="114.2,-568.89 110.19,-559.08 107.21,-569.24 114.2,-568.89"/>
+<text text-anchor="middle" x="167.16" y="-580" font-family="Times,serif" font-size="14.00">  random == 4     </text>
+</g>
+<!-- if_walk&#45;&gt;walk_with_ps -->
+<g id="edge12" class="edge">
+<title>if_walk-&gt;walk_with_ps</title>
+<path fill="none" stroke="lime" d="M239.84,-624.15C237.75,-609.6 236.47,-591.69 239.08,-575.8 245.62,-535.96 260.51,-492.78 273.23,-460.64"/>
+<polygon fill="lime" stroke="lime" points="276.39,-462.17 276.88,-451.59 269.89,-459.56 276.39,-462.17"/>
+<text text-anchor="middle" x="293.41" y="-580" font-family="Times,serif" font-size="14.00">   random == 2       </text>
+</g>
+<!-- if_walk&#45;&gt;at_home -->
+<!-- if_walk&#45;&gt;at_home -->
+<g id="edge14" class="edge">
+<title>if_walk-&gt;at_home</title>
+<path fill="none" stroke="lime" d="M314.13,-624.25C326.88,-615.89 338.68,-605.44 346.63,-592.6 373.12,-549.86 359.26,-417.07 363.87,-367 367.9,-323.21 373.28,-273.64 377.41,-237.06"/>
+<polygon fill="lime" stroke="lime" points="380.89,-237.49 378.54,-227.16 373.93,-236.7 380.89,-237.49"/>
+<text text-anchor="middle" x="379.02" y="-406" font-family="Times,serif" font-size="14.00">  else</text>
+</g>
+
+</g>
+</svg>
